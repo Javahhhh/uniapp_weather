@@ -1,0 +1,56 @@
+{
+	"easycom": {
+			"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",	
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/Warning_situation/Warning_situation",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		
+		{
+			"path" : "pages/air_quality/air_quality",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/map/map",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "汽车",
+		"navigationBarBackgroundColor": "#2af849",
+		"backgroundColor": "#3ef822"
+	},
+	"uniIdRouter": {},
+	
+	"permission" :{
+		"scope.userLocation":{
+			"desc":"位置将用于小程序展示"
+		}
+	},
+	"requireedPrivateInfos":[
+		"getLocation",
+		"onLocationChange"
+	]
+}
